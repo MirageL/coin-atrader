@@ -11,7 +11,7 @@ public class Main {
     static LinkedList<Stock> binance = new LinkedList<Stock>();
 
     public static void main(String[] args) {
-
+        system.out.println("TEST FORK");
         getSymbols();
         compare();
     /*    while(true)
