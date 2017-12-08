@@ -43,7 +43,29 @@ def main(argv):
     tickers_order = b_client.get_orderbook_tickers()
 ############
 
-    print(h_client.get_orderbook("ETHBTC"))
+    # print(h_client.get_orderbook("ETHBTC"))
+    ethbtc_orderbook = h_client.get_orderbook("ETHBTC")
+
+#Check to see which coins can be traded and withdrawn
+    h_cryptolist = []
+    h_currencies = h_client.currencies()
+    for currency in h_currencies:
+        if currency['id'] == 'BTC':
+            print(currency)
+
+
+    minimum_ask = 0
+    minimum_bid = 0
+
+    for order, price in ethbtc_orderbook.items():
+        print(order,":",price)
+        print(len(price))
+        # for i in price.length():
+        if order == 'ask':
+            pass
+            # print("minimum ask price is: ")
+        if order == 'bid':
+            pass
 
 #First requirement is we should be able to pass settings into the bot
 if __name__ == "__main__":

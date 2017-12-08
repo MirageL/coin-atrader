@@ -10,6 +10,11 @@ class H_Client(object):
         self.session = requests.session()
         self.session.auth = (public_key, secret)
 
+    def currencies(self):
+        """Get Currencies"""
+        # https://api.hitbtc.com/api/2/public/currency/
+        return self.session.get("%s/public/currency/" % (self.url)).json()
+
     def get_symbol(self, symbol_code):
         """Get symbol."""
         return self.session.get("%s/public/symbol/%s" % (self.url, symbol_code)).json()
