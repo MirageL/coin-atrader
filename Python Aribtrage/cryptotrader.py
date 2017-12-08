@@ -13,11 +13,11 @@ def main(argv):
 
     ########### API KEYS ###########
     #Binance
-    b_api_key = 'jHAFZpiffIBg6u5ypanMjRAo2MLmHZm2ECtTWfFwvqbfXEHdjeRspUos6u7qjr6G'
-    b_api_secret = 'Cp8iLFxL15S11PbJcN37AHvwUgv8FT8tjiosjcyYhjTvT066AfbzQhn7Wr6lJJTw'
+    b_api_key = 'newb'
+    b_api_secret = 'noob'
     #HitBTC
-    h_api_key = '07cf7e0803a5dcb65b45df9074f271ea'
-    h_api_secret = '317d84c2873787cd0a96cefab5826d59'
+    h_api_key = 'nub'
+    h_api_secret = '...'
 
     #### Client Declarations ####
 
